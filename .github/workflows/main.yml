@@ -12,8 +12,8 @@ jobs:
           ref: master
       - name: Reset master branch
         run: |
-          git fetch origin develop:develop
-          git reset --hard develop
+          git fetch origin new-branch:new-branch
+          git reset --hard new-branch
       - name: Create Pull Request
         uses: Manvi1411/create-pull-request@v4
         with:
